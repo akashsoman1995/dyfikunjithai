@@ -209,6 +209,70 @@
 
 
     </section>
+    
+    <!-------------presure checking------------->
+
+    <section>
+
+
+      <div class="small-container ">
+    
+        <div class="row row-2">
+            <h2></h2>
+            
+            </div>
+            <div class="row backcmt">
+            <div class="col col-wall  pre">
+                <a href=""><img src="pic/presure.jpg" alt="" width="400px"></a>
+                <h4>പരിചരിക്കാൻ  ഞങ്ങൾ നിങ്ങളുടെ വീട്ടിൽ എത്തുന്നു .....
+
+                </h4>
+                
+                
+               
+            </div>
+            <div class="col-blood ">
+              <div class="dia-blood">
+                <h4>രജിസ്റ്റർ ചെയ്യൂ 
+
+                   </h4>
+                <p></p>
+                <div class="fmr">
+                  <form  id="submit-formpre">
+                   
+                    
+                    <input type="text" name="fullname" placeholder="Fullname" required minlength="4">
+                    <input type="tel" name="mobile" placeholder="Mobile Number" required pattern="[0-9]{10}">
+                    
+
+                 
+                  
+                  
+                  
+                  <input type="submit" class="button" value="register">
+                
+                
+                  </form>
+                  </div>
+
+                   
+               
+                  
+        </div>
+       
+                
+            </div>
+            
+            
+        </div>
+        
+        
+        
+    </div>
+
+
+
+    </section>
 
     <!-------------commitee------------------------->
     <section>
@@ -442,6 +506,26 @@
             })
         })
     </script>
+    <!---------------------form submission for blood presure  -->
+    <script>
+      $("#submit-formpre").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"https://script.google.com/macros/s/AKfycbzCtIUJVBXMNnEDCiw7CDUF24kT7l4XxlfPvhzyaw/exec",
+              data:$("#submit-formpre").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Form submitted successfully")
+                  window.location.reload()
+                  //window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Error")
+  
+              }
+          })
+      })
+  </script>
 
         
 
