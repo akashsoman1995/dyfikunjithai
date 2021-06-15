@@ -925,6 +925,11 @@ margin-right: 50px;
   font-size: 18px;
 
 }
+	  /*------presuree-------*/
+.pre a img{
+  width: 270px;
+  height: 210px;
+}
 
 /*-----------gallery---------*/
 .btn-gallery{
